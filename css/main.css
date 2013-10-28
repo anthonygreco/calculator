@@ -25,16 +25,12 @@
 }
 
 #calculator #number {
-/*	font-size: 20px;
-	line-height: 32px;*/
 	font-size: 1.5em;
 	line-height: 1.5em;
 	padding: 0 6px;
 }
 
 #calculator #info {
-/*	font-size: 12px;
-	line-height: 11px;*/
 	font-size: 1em;
 	line-height: .5em;
 	margin-top: -15px;
@@ -43,8 +39,6 @@
 }
 
 #calculator #info #memory {
-/*	font-size: 11px;
-	line-height: 30px;*/
 	font-size: .875em;
 	line-height: 1.75em;
 	padding-right: 110px;

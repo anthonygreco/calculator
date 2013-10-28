@@ -8,6 +8,7 @@
 #calculator #body {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
+	font-size: 100%;
 }
 
 #calculator #display {
@@ -24,27 +25,35 @@
 }
 
 #calculator #number {
-	font-size: 20px;
-	line-height: 32px;
+/*	font-size: 20px;
+	line-height: 32px;*/
+	font-size: 1.5em;
+	line-height: 1.5em;
 	padding: 0 6px;
 }
 
 #calculator #info {
-	font-size: 12px;
-	line-height: 11px;
-	margin-top: -18px;
+/*	font-size: 12px;
+	line-height: 11px;*/
+	font-size: 1em;
+	line-height: .5em;
+	margin-top: -15px;
 	padding-right: 8px;
 	min-height: 22px;
 }
 
 #calculator #info #memory {
-	font-size: 11px;
-	line-height: 30px;
+/*	font-size: 11px;
+	line-height: 30px;*/
+	font-size: .875em;
+	line-height: 1.75em;
 	padding-right: 110px;
 	height: 11px;
 }
 
 #calculator .btn {
+	font-size: 1.5em;
+	line-height: 1.5em;
 	background-repeat: repeat-x;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.36);
 	-webkit-font-smoothing: antialiased;
@@ -52,3 +61,8 @@
 	-moz-border-radius: 5px;
 }
 
+#source {
+	text-align: center;
+	width: 300px;
+	margin: 10px auto;
+}

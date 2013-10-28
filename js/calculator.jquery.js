@@ -37,7 +37,12 @@
 			if(self.options.height === 'auto') {
 				$elem.css('height', 'auto');
 			} else if(typeof(self.options.height) === 'number') {
-				$elem.height(self.options.height);
+				var height = (self.options.height-36)/7;
+				$elem.find('#display #number').height(height);
+				$elem.find('.row:not(#display)').height(height);
+				$elem.find('.btn').height(height);
+				$elem.find('#body').height(self.options.height+56);
+				$elem.height(self.options.height+56);
 			}
 		},
 		set_colors: function($elem) {
@@ -317,8 +322,8 @@
 		});
 	};
 	$.fn.calculator.options = {
-		width: 180,
-		height: 245,
+		width: 300,
+		height: 345,
 		colors: {
 			buttons: 'gray',
 			display: '#ccc'

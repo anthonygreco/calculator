@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+	<div id="calculator">
+		<div id="body" class="container">
+			<div class="row">
+				<div id="display">
+					<div class="col-xs-12" id="number">0</div>
+					<div class="col-xs-12" id="info"><div id="memory"></div><div id="operator"></div></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3 btn btn-small" id="function_c">C</div>
+				<div class="col-xs-3 btn btn-small" id="function_mc">MC</div>
+				<div class="col-xs-3 btn btn-small" id="function_ms">MS</div>
+				<div class="col-xs-3 btn btn-small" id="function_mr">MR</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3 btn btn-small" id="number_7">7</div>
+				<div class="col-xs-3 btn btn-small" id="number_8">8</div>
+				<div class="col-xs-3 btn btn-small" id="number_9">9</div>
+				<div class="col-xs-3 btn btn-small" id="operator_divide">&divide;</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3 btn btn-small" id="number_4">4</div>
+				<div class="col-xs-3 btn btn-small" id="number_5">5</div>
+				<div class="col-xs-3 btn btn-small" id="number_6">6</div>
+				<div class="col-xs-3 btn btn-small" id="operator_multiply">&times;</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3 btn btn-small" id="number_1">1</div>
+				<div class="col-xs-3 btn btn-small" id="number_2">2</div>
+				<div class="col-xs-3 btn btn-small" id="number_3">3</div>
+				<div class="col-xs-3 btn btn-small" id="operator_subtract">-</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 btn btn-small" id="number_0">0</div>
+				<div class="col-xs-3 btn btn-small" id="number_.">.</div>
+				<div class="col-xs-3 btn btn-small" id="operator_add">+</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 btn btn-small" id="function_equals">=</div>
+			</div>
+		</div>
+		<a href="js/calculator.jquery.js" target="_blank">JavaScript Source</a>
+	</div>
+	<!-- <script type="text/javascript" src="js/jquery-1.10.2.js"></script> -->
+	<!-- <script type="text/javascript" src="js/polyfill.js"></script> -->
+	<!-- <script type="text/javascript" src="js/calculator.jquery.js"></script> -->
+	<script type="text/javascript" src="js/compressed.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('div#calculator').calculator({
+				width: 180, // in pixels or as string 'auto'
+				height: 245, // in pixels or as string 'auto'
+				colors: {
+					buttons: { // pass a single string for a flat color, hex or color name
+						from: '#b8d3da', // as hex value or color name
+						to: '#5493a4' // as hex value or color name
+					},
+					display: { // pass a single string for a flat color, hex or color name
+						from: '#b8d3da', // as hex value or color name
+						to: '#5493a4' // as hex value or color name
+					},
+					text: '#000' // as hex value or color name
+				},
+				font: 'Droid Sans', // any google font
+				debug: true,
+				accuracy: 2 // how many decimals
+			});
+		});
+</script>
+</body>
+</html>

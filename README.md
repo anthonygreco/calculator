@@ -23,12 +23,11 @@ cd calculator
 vagrant up # this will take some time on the first run while it provisions the box; subsequent calls to vagrant up should take under a minute
 ```
 
-* Open a browser and navigate to http://localhost:8080
+* Open a browser and navigate to [http://localhost:8080]
 
 ###Open Public Libraries
 * [jQuery]
 * [Bootstrap]
-* [Composer]
 
 ###Optional
 * Install the [EditorConfig Plugin] for your prefered editor
@@ -49,3 +48,4 @@ Restart Sublime Text
 [Package Control]: https://sublime.wbond.net/installation
 [jQuery]: http://jquery.com/
 [Bootstrap]: http://getbootstrap.com/
+[http://localhost:8080]: http://localhost:8080
